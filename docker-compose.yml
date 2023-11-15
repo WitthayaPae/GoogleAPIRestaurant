@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  GoogleAPI:
+    container_name: GoogleAPI
+    image: webdevops/php-nginx:8.2-alpine
+    working_dir: /app
+    volumes:
+      - ./restaurant-app:/app
+    ports:
+      - "81:80"
+    environment:
+      WEB_DOCUMENT_ROOT: /app/public
+      PHP_MAX_EXECUTION_TIME: 300
