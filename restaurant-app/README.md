@@ -2,7 +2,9 @@
 # docker compose up -d
 # docker exec -it GoogleAPI bash
 # composer install
-# check .env
+# php artisan key:generate
+# check .env if exist
+
 
 
 
